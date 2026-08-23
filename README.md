@@ -58,6 +58,20 @@ service cloud.firestore {
 
 4 **Rode npm run dev e abra http://localhost:5173.**
 
+## Estrutura do Projeto
+
+```text
+├── public/               # Arquivos estáticos
+├── src/
+│   ├── firebase.js       # Configuração do Firebase e exportação do banco
+│   ├── App.jsx           # Componente principal (formulário e lista)
+│   ├── main.jsx          # Ponto de entrada do React
+│   └── index.css         # Estilos globais
+├── .env                  # Suas chaves do Firebase (ignorado pelo Git)
+├── .gitignore            # Arquivos ignorados pelo Git
+└── package.json          # Dependências do projeto
+```
+
 # Aviso de Segurança
 
 A ``apiKey`` do Firebase é **pública por natureza** e pode aparecer no código do front-end, o que é normal.
